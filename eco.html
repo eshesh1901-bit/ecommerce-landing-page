@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce Product Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+
+    
+    header {
+      background: linear-gradient(120deg, #4f46e5, #6366f1);
+      color: #fff;
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 2rem;
+      background: #fff;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #4f46e5;
+    }
+
+    .hero-text p {
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #4f46e5;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+    }
+
+    .hero img {
+      width: 400px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+
+   
+    .products {
+      padding: 3rem 2rem;
+    }
+
+    .products h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #4f46e5;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card img {
+      width: 150px;
+      margin-bottom: 1rem;
+    }
+
+    .product-card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .price {
+      color: #16a34a;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+  
+    .cta {
+      background: linear-gradient(120deg, #6366f1, #4f46e5);
+      color: #fff;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta h2 {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 1rem;
+    }
+
+   
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero img {
+        margin-top: 2rem;
+        width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ShopNow</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#offers">Offers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Discover Smart & Stylish Products</h2>
+      <p>Upgrade your lifestyle with premium gadgets at unbeatable prices. Limited-time offers available now.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+    <img src="images.jpeg" alt="Product Image">
+  </section>
+
+  <section class="products" id="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="504562_26091_XXL.jpg" alt="Product 1">
+        <h3>Smart Watch</h3>
+        <p class="price">₹3,999</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="Factory-Original-Realme-TechLife-Buds-T100-Bluetooth-Truly-Wireless-in-Ear-Earbuds-ENC-Noise-Cancelling-Earphone.avif" alt="Product 2">
+        <h3>Wireless Headphones</h3>
+        <p class="price">₹2,499</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="5386.webp" alt="Product 3">
+        <h3>Bluetooth Speaker</h3>
+        <p class="price">₹1,999</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="offers">
+    <h2>Special Festival Offer 🎉</h2>
+    <p>Get up to 40% OFF on selected products. Hurry, offer ends soon!</p>
+    <a href="#" class="btn">Grab Deal</a>
+  </section>
+
+  <footer id="contact">
+    <p>© 2022 ShopNow. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+ 
+    document.querySelectorAll('.btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        console.log('CTA button clicked');
+      });
+    });
+  </script>
+
+</body>
+</html>
